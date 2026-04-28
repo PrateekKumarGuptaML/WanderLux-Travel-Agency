@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact WanderLux Travel Agency by phone, email, form or office location map." />
+  <title>Contact | WanderLux</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Wander<span>Lux</span></a>
+      <button class="menu-toggle" aria-label="Navigation menu">☰</button>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Destinations & Services</a></li>
+        <li><a href="calculator.html">Trip Calculator</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="contact-layout reveal">
+      <div>
+        <p class="highlighted-heading">Contact us</p>
+        <h1>Start your next journey today.</h1>
+        <div class="info-panel">
+          <p><strong>Address:</strong> 120 Harbour Street, Sydney NSW 2000</p>
+          <p><strong>Phone:</strong> +61 2 9000 1234</p>
+          <p><strong>Email:</strong> hello@wanderlux.example</p>
+          <div class="map" role="img" aria-label="Map placeholder showing WanderLux office location in Sydney">
+            Sydney Office Map
+          </div>
+        </div>
+      </div>
+      
+      <form id="contactForm" class="form-card" action="mailto:hello@wanderlux.example" method="post" enctype="text/plain" novalidate>
+        <label for="contactName">Name</label>
+        <input type="text" id="contactName" name="Name" required />
+
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" name="Email" required />
+
+        <label for="contactSubject">Subject</label>
+        <input type="text" id="contactSubject" name="Subject" required />
+
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" name="Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn primary full">Send Email</button>
+        <p class="result" id="contactResult" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>

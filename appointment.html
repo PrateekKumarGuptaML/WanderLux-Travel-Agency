@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a travel planning appointment with WanderLux Travel Agency." />
+  <title>Appointment Request | WanderLux</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Wander<span>Lux</span></a>
+      <button class="menu-toggle" aria-label="Navigation menu">☰</button>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Destinations & Services</a></li>
+        <li><a href="calculator.html">Trip Calculator</a></li>
+        <li><a class="active" href="appointment.html">Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="form-section reveal">
+      <div>
+        <p class="highlighted-heading">Plan with an expert</p>
+        <h1>Request an Appointment</h1>
+        <p>Submit your details and a travel consultant will contact you to discuss destination ideas, timing and budget.</p>
+      </div>
+      
+      <form id="appointmentForm" class="form-card" action="mailto:appointments@wanderlux.example" method="post" enctype="text/plain" novalidate>
+        <label for="appName">Name</label>
+        <input type="text" id="appName" name="Name" placeholder="Your full name" required />
+
+        <label for="appEmail">Email</label>
+        <input type="email" id="appEmail" name="Email" placeholder="you@example.com" required />
+
+        <label for="appPhone">Phone</label>
+        <input type="tel" id="appPhone" name="Phone" placeholder="04XX XXX XXX" required />
+
+        <label for="appDate">Preferred Date</label>
+        <input type="date" id="appDate" name="Preferred Date" required />
+
+        <label for="appMessage">Message</label>
+        <textarea id="appMessage" name="Message" rows="5" placeholder="Tell us about your travel plans" required></textarea>
+
+        <button type="submit" class="btn primary full">Submit Request</button>
+        <p class="result" id="appointmentResult" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
